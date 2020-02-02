@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Tabs, Tab, Grid, Cell, Card, CardTitle, CardActions, Button, CardMenu, IconButton, CardText } from 'react-mdl';
+import {Tabs, Tab, Grid, Cell, Card, CardTitle, Drawer, CardActions, Button, CardMenu, IconButton, CardText } from 'react-mdl';
 
 
 class Projects extends Component {
@@ -276,6 +276,7 @@ toggleCategories() {
         return (
             <div className='category-tabs'>
                 <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({activeTab: tabId})} ripple>
+
                     <Tab>HTML/CSS</Tab>
                     <Tab>JavaScript</Tab>
                     <Tab>React</Tab>
@@ -283,7 +284,9 @@ toggleCategories() {
                     <Tab>Node JS</Tab>
                     <Tab>Bootstrap</Tab>
                     <Tab>SQL</Tab>
+                    
                 </Tabs>
+                
 
                 
                    <Grid>
