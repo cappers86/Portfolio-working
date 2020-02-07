@@ -23,7 +23,7 @@ class Landing extends Component {
                               <i className='fa fa-github-square' aria-hidden='true'/>
                           </a>
 
-                           {/*linkrdin*/}
+                           {/*linkdin*/}
                            <a href='https://www.linkedin.com/in/colin-toft-41975518a/' rel='noopener noreferrer' target='_blank'>
                               <i className='fa fa-linkedin-square' aria-hidden='true'/>
                           </a>
