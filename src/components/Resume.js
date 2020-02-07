@@ -1,5 +1,8 @@
 import React, {Component} from 'react';
 import {Grid, Cell} from 'react-mdl';
+import Education from './Education';
+import Experiance from './Experiance';
+import Skills from './Skills';
 
 class Resume extends Component {
     render() {
@@ -14,8 +17,77 @@ class Resume extends Component {
                             style={{height: '200px', borderRadius: '50%'}}
                             />
                         </div>
+
+                        <h2 style={{paddingTop: '2em'}}>Colin Toft</h2>
+                        <h4 style={{color: 'grey'}}>Programmer</h4>
+                        <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce venenatis felis lorem. Duis euismod aliquam erat, non porttitor mi semper vitae. Pellentesque et odio dignissim, luctus nisl dignissim, semper enim. Curabitur lorem massa, lobortis auctor fermentum vitae, sollicitudin pellentesque dui. Duis pretium sagittis ultrices. Donec a risus at urna ultricies.</p>
+                        <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
+                        <h5>Address</h5>
+                        <p>xyz, 1234</p>
+                        <h5>Phone</h5>
+                        <p>079575517290</p>
+                        <h5>Email</h5>
+                        <p>colinat@hotmail.co.uk</p>
+                        <h5>Website</h5>
+                        <p>mywebsite.com</p>
+                        <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
                     </Cell>
-                    <Cell className='resume-right-col' col={8}>right side</Cell>
+                    <Cell className='resume-right-col' col={8}>
+                        <h2>Education</h2>
+
+                        <Education 
+                        startYear={2002}
+                        endYear={2006}
+                        schoolName={'My Uni'}
+                        schoolDescription={'hey a hsohd ehjohiw ewo'}
+                        />
+                        <Education 
+                        startYear={2007}
+                        endYear={2009}
+                        schoolName={'My Uni 2'}
+                        schoolDescription={'hey a hsohd ehjohiw ewo'}
+                        />
+                        <hr style={{borderTop: '3px solid #e22947', width: '100%'}} />
+
+                        <h2>Experiance</h2>
+
+                        <Experiance
+                            startYear={2009}
+                            endYear={2012}
+                            jobName={'Job 1'}
+                            jobDescription={'Job description '}
+                        />
+
+                        <Experiance
+                            startYear={2012}
+                            endYear={2015}
+                            jobName={'Job 2'}
+                            jobDescription={'Job description '}
+                        />
+
+                        <hr style={{borderTop: '3px solid #e22947', width: '100%'}} />
+
+                        <h2> Skills </h2>
+                        <Skills
+                         skill='JavaScript'
+                         progress={100}
+                        />
+                        <Skills
+                         skill='HTML/CSS'
+                         progress={80}
+                        />
+                        <Skills
+                         skill='React'
+                         progress={80}
+                        />
+                        <Skills
+                         skill='Node JS'
+                         progress={80}
+                        />
+
+
+                    </Cell>
                      
                 </Grid>
             </div>
