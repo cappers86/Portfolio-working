@@ -112,7 +112,7 @@ toggleCategories() {
                          <CardActions border>
                              <Button colored>Github</Button>
                              <Button colored>CodePen</Button>
-                             <a href='https://romantic-leakey-0996ce.netlify.com/'><Button colored>LiveDemo</Button></a>
+                             <a href='https://colintoft.dev/'><Button colored>LiveDemo</Button></a>
                         </CardActions>
                         <CardMenu style={{color: '#fff'}}>
                             <IconButton name='share'/>
