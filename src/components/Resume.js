@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Grid, Cell} from 'react-mdl';
+import {Grid, Cell, Footer, FooterSection} from 'react-mdl';
 import Education from './Education';
 import Experiance from './Experiance';
 import Skills from './Skills';
@@ -8,7 +8,7 @@ class Resume extends Component {
     render() {
         return (
             <div>
-                <Grid>
+                <Grid className='resume-page'>
                     <Cell className='resume-left-col' col={4}>
                         <div style={{textAlign: 'center'}}>
                             <img
@@ -71,25 +71,30 @@ class Resume extends Component {
                         <h2> Skills </h2>
                         <Skills
                          skill='JavaScript'
-                         progress={100}
+                         
                         />
                         <Skills
                          skill='HTML/CSS'
-                         progress={80}
+                         
                         />
                         <Skills
                          skill='React'
-                         progress={80}
+                         
                         />
                         <Skills
                          skill='Node JS'
-                         progress={80}
+                         
                         />
 
 
                     </Cell>
                      
                 </Grid>
+                <Footer className='footer' size="mini">
+    <FooterSection type="right" logo="Made by Colin Toft">
+       
+    </FooterSection>
+</Footer>
             </div>
         )
     }

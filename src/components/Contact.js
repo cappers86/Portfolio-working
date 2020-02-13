@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Grid, Cell, List, ListItem, ListItemContent} from 'react-mdl';
+import {Grid, Cell, List, ListItem, ListItemContent, Footer, FooterSection} from 'react-mdl';
 
 
 class Contact extends Component {
@@ -59,6 +59,12 @@ class Contact extends Component {
                         </div>
                     </Cell>
                 </Grid>
+                <Footer className='footer' size="mini">
+    <FooterSection type="right" logo="Made by Colin Toft">
+       
+    </FooterSection>
+</Footer>
+
             </div>
         )
     }

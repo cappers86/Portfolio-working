@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Grid, Cell} from 'react-mdl';
+import {Grid, Cell, Footer, FooterSection } from 'react-mdl';
 class Landing extends Component {
     render() {
         return (
@@ -15,7 +15,7 @@ class Landing extends Component {
                         <h1>Full Stack Web Developer</h1>
                       <hr />
                       <div className='skill'>
-                      <p>HTML/CSS | JavaScript | React | React Native | NodeJs | BootStrap | SQL</p>
+                      <p>HTML/CSS | JavaScript | React | NodeJs | BootStrap | SQL</p>
                       </div>
                       <div className='social-links'>
                           {/* github */}
@@ -31,6 +31,12 @@ class Landing extends Component {
                       </div>
                       </Cell>
                 </Grid>
+                <Footer className='footer' size="mini">
+    <FooterSection type="right" logo="Made by Colin Toft">
+       
+    </FooterSection>
+</Footer>
+
             </div>
             )
     }
