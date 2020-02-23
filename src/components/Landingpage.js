@@ -32,7 +32,7 @@ class Landing extends Component {
                       </Cell>
                 </Grid>
                 <Footer className='footer' size="mini">
-    <FooterSection type="right" logo="Made by Colin Toft">
+    <FooterSection>
        
     </FooterSection>
 </Footer>

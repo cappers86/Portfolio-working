@@ -30,10 +30,17 @@ height: 100;
 
 @media (min-width: 700px) {
     .landing-grid h1  {
-        background-color: red;
         display: flex;
         flex-direction: column;
+        justify-content: space-evenly;
+        font-size: 1.5rem;
     }
+
+.category-tabs .Tab {
+    display: flex;
+    justify-content: space-evenly;
+}
+    
 }
 
 .resume-right-col {
@@ -106,7 +113,7 @@ height: 100;
 }
 
 .banner-text h1 {
-  font-size: 66px;
+  font-size: 3rem;
    font-weight: bold;
    color: white; 
 }

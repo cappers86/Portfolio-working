@@ -245,14 +245,14 @@ toggleCategories() {
         return (
             <div className='category-tabs'>
                 <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({activeTab: tabId})} ripple>
-
+                
                     <Tab>HTML/CSS</Tab>
-                    <Tab>JavaScript</Tab>
-                    <Tab>React</Tab>
-                    <Tab>Node JS</Tab>
+                    <Tab>Vanilla JavaScript</Tab>
+                    <Tab>React JS</Tab>
+                    <Tab>Node</Tab>
                     <Tab>Bootstrap</Tab>
                     <Tab>SQL</Tab>
-                    
+                   
                 </Tabs>
                 
 
