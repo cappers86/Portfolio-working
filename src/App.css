@@ -16,7 +16,25 @@ width: 100%;
 height: 100;
 }
 
+@media screen {
+    body {
+        width: 75%;
+    }
+}
 
+@media print {
+    body {
+        width: 100%;
+    }
+}
+
+@media (min-width: 700px) {
+    .landing-grid h1  {
+        background-color: red;
+        display: flex;
+        flex-direction: column;
+    }
+}
 
 .resume-right-col {
     background-color: #27221f;
